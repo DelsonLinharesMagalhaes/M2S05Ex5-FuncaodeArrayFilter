@@ -10,3 +10,16 @@ const empresas = [
 const anoDeCriacao = empresas.filter(empresa => (empresa.anoDeCriacao > 2000));
 
 console.log( anoDeCriacao );
+
+const estoque = [
+    {codigo: 1, descrição: "Coca-cola", unidade: "Lata", valor: 5.00},
+    {codigo: 1, descrição: "Guaraná", unidade: "Lata", valor: 5.00},
+    {codigo: 1, descrição: "Haineken", unidade: "Garrafa", valor: 5.00},
+    {codigo: 1, descrição: "Original", unidade: "Garrafa", valor: 5.00},
+    {codigo: 1, descrição: "Spaten", unidade: "Garrafa", valor: 5.00},
+    {codigo: 1, descrição: "Laranjinha", unidade: "Ks", valor: 5.00},
+    {codigo: 1, descrição: "Sprite", unidade: "Lata", valor: 5.00}
+];
+
+const tipoLata = estoque.filter(element => element.unidade === "Lata")
+console.log(tipoLata)
